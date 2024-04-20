@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.head {
+  background-color: #565656;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+}
+.bimg {
+  height: 200px;
+  width: 200px;
+  border: 6px dotted #fabf29;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.name {
+  position: absolute;
+  font-size: 3em;
+  background-color: #fabf29;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin-top: 230px;
+  z-index: 1;
+}
+.whitespace {
+  height: 30px;
+  background-color: #eeeeee;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 258px;
+}
+.contect {
+  /* font-size: large; */
+  text-align: center;
+  padding: 7px;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.body {
+  display: flex;
+  margin-top: 20px;
+}
+
+.first-off {
+  width: 50%;
+  border-right: 1px solid rgb(86, 86, 86, 0.7);
+}
+.card1 {
+  padding: 10px;
+  margin: 10px 10px 10px 10%;
+  width: 80%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border: 4px dotted #fabf29;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+}
+i {
+  background-color: #565656;
+  color: #fabf29;
+  padding: 13px;
+  text-align: center;
+  border-radius: 50%;
+}
+.icon h2 {
+  margin: 10px 15px;
+  color: #707070;
+}
+.card-content {
+  margin-top: 20px;
+  text-align: justify;
+  color: #3f3f3f;
+  padding-right: 20px;
+}
+.card-content h4 {
+  text-align: center;
+}
+.card-content ul {
+  list-style-position: inside;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.progress {
+  width: 150px;
+  height: 7px;
+  accent-color: rgb(250, 203, 84);
+}
+.li-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.li-bar {
+  margin-top: 20px;
+}
+.sec-off {
+  width: 50%;
+  margin-left: -10px;
+}
+.position {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.position h4 {
+  text-align: left;
+}
+.date {
+  text-align: right;
+}
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 2.5em;
+  }
+  .whitespace {
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contect {
+    font-size: small;
+    /* color: #fabf29; */
+  }
+}
+@media only screen and (max-width: 900px) {
+  .position {
+    grid-template-columns: 1fr 1fr;
+  }
+  .li-page {
+    font-size: small;
+  }
+}
